@@ -2,8 +2,4 @@
 
 # dependencies
 /node_modules
-/client
-/views
-/public
-*/index.js
-*/items.js
+/client/node_modules

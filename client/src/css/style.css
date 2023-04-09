@@ -1,0 +1,713 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.underline {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.container {
+  background: white;
+  width: 100%;
+  padding: 0px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+}
+
+::selection {
+  color: #000;
+  background: #fff;
+}
+nav {
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul {
+  display: inline-flex;
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child {
+  margin-left: 0px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover {
+  background: #fff;
+  color: black;
+}
+.card {
+  width: 200px;
+  border: 1px solid black;
+}
+.p-viewer {
+  z-index: 9999;
+  position: absolute;
+  top: 45%;
+  right: 10px;
+}
+.img3 {
+  background: url("./img3.jpg") no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center {
+  position: absolute;
+  top: 52%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns {
+  margin-top: 20px;
+}
+.center .btns a {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns a:first-child {
+  color: #fff;
+  background: none;
+}
+.btns a:first-child:hover {
+  background: white;
+  color: black;
+}
+.center .btns a:last-child {
+  background: white;
+  color: black;
+}
+.btns1 {
+  padding-left: 55%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.login {
+  margin: auto;
+  display: grid;
+  place-items: center;
+}
+
+.login .container {
+  margin-top: 10%;
+  width: 500px !important;
+  padding-bottom: 5%;
+}
+
+::selection {
+  background: #ff80bf;
+}
+
+.container {
+  background: transparent;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container .formtitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+
+.container .formtitle:before {
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  left: 0px;
+  bottom: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+
+.container form .input-box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.container form .input-box input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+
+.container form .underline::before {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+
+.container form .underline::after {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.container form .button {
+  margin: 40px 0 20px 0;
+}
+
+.container .input-box input[type="submit"] {
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+:-moz-any() .container .input-box input[type="submit"]:hover {
+  letter-spacing: 1px;
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+
+.container .option {
+  font-size: 14px;
+  text-align: center;
+}
+
+.container .facebook a,
+.container .twitter a {
+  display: block;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.container .facebook i,
+.container .twitter i {
+  padding-right: 12px;
+  font-size: 20px;
+}
+
+.container .twitter a {
+  background: linear-gradient(to right, #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+
+.container .twitter a:hover {
+  background: linear-gradient(to left, #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+
+.container .facebook a {
+  background: linear-gradient(to right, #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+
+.container .facebook a:hover {
+  background: linear-gradient(to left, #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+
+#map {
+  height: 93%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navbar-inverse {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.index-buttons {
+  text-align: center;
+  background: rgba(253, 0, 0, 0.2);
+
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  /* margin-left:15%; */
+  width: 100%;
+}
+.container .container-buttons {
+  width: 100%;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red; */
+  /* color: white; */
+  text-align: center;
+}
+.dark {
+  background: #232323;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: white;
+  bottom: 0;
+}
+.row {
+  margin: 0;
+}
+.centertopage {
+  padding-top: 2%;
+}
+.itemDetailsButton {
+  display: inline-block;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+th,
+td {
+  overflow: hidden;
+}
+
+/* List styling */
+.thisClass {
+  list-style: none;
+  width: 33%;
+  transition-property: width;
+  transition-duration: 2s;
+  border: 1px solid #333;
+  border-radius: 0px;
+}
+.buttonList {
+  text-align: center;
+  padding: 0px;
+  margin: 20px auto;
+}
+.btn-block + .btn-block {
+  margin-top: 0px;
+}
+.searchbar {
+  text-align: center;
+  padding-top: 70px;
+}
+
+/* Add media queries to hide the items from table*/
+
+.active {
+  background: #666;
+  color: white;
+}
+.plus-button {
+  text-align: center;
+  padding: 3px;
+  margin: 0;
+  font-size: 2em;
+}
+
+.login-padding {
+  margin: 60px;
+  padding: 20px;
+}
+
+/* Google Maps */
+#map_show {
+  height: 400px;
+  width: 100%;
+}
+.p-viewer {
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 15px;
+  display: inline-table;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  background: url("./img3.jpg");
+  border-color: #d9d9d9;
+}
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, yellowgreen, yellowgreen);
+}
+form .button input:hover {
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, yellowgreen, yellowgreen);
+}
+
+body {
+  background: url("./img3.jpg");
+}
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category {
+    width: 100%;
+  }
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+@media (max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.registerForm {
+  width: 50%;
+  margin: 25px auto;
+}
+
+.container.register.login.title {
+  margin: auto;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+.register {
+  max-width: 700px !important;
+}
+
+::selection {
+  background: #ff80bf;
+}
+
+.container {
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+  padding: 0px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.container form .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+
+.container form .title:before {
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  left: 0px;
+  bottom: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+
+.container form .input-box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.container form .input-box input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+
+.container form .underline::before {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+
+.container form .underline::after {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.container form .button {
+  margin: 40px 0 20px 0;
+}
+
+.container .input-box input[type="submit"] {
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+:-moz-any() .container .input-box input[type="submit"]:hover {
+  letter-spacing: 1px;
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+
+.container .option {
+  font-size: 14px;
+  text-align: center;
+}
+
+.container .facebook a,
+.container .twitter a {
+  display: block;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.container .facebook i,
+.container .twitter i {
+  padding-right: 12px;
+  font-size: 20px;
+}
+
+.container .twitter a {
+  background: linear-gradient(to right, #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+
+.container .twitter a:hover {
+  background: linear-gradient(to left, #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+
+.container .facebook a {
+  background: linear-gradient(to right, #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+
+.container .facebook a:hover {
+  background: linear-gradient(to left, #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
