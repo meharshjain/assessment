@@ -142,6 +142,11 @@ router.post("/newRequest", function (req, res) {
       res.end(String(err));
       return;
     }
+    if(files.policy.size > 2000) {
+      res.writeHead(500, { "Content-Type": "text/plain" });
+      res.end('Limit reached for upload');
+      return;
+    }
     const newlog = new unallocatedTasks({
       productType: fields.productType,
       issueType: JSON.parse(fields.issueType),

@@ -1,7 +1,7 @@
 var express = require("express"),
   mongoose = require("mongoose"),
   app = express(),
-  port = process.env.PORT || 5000,
+  port = process.env.PORT || 8080,
   methodOverride = require("method-override"),
   passport = require("passport"),
   LocalStrategy = require("passport-local"),
@@ -13,9 +13,7 @@ app.use(methodOverride("_method"));
 app.use(bodyParser.urlencoded({ extended: false }));
 //require("dotenv").config({ path: "./.env" });
 
-if (process.env.NODE.ENV === "production") {
-  app.use(express.static("client/build"));
-}
+app.use(express.static("client/build"));
 
 //ONLINE MONGODB ATLAS
 const DB = "mongodb+srv://admin:admin@cluster0.oun5l.mongodb.net/assessment";
@@ -34,7 +32,7 @@ mongoose
 
 //session
 var store = new MongoStore({
-  uri: "mongodb://localhost:27017/assessment",
+  uri: DB,
   collection: "sessions",
   secret: "secretCode",
 });

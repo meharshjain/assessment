@@ -175,6 +175,7 @@ function App() {
                   />
                   <input
                     type="file"
+                    data-max-size="2048" 
                     accept="image/png, application/pdf, application/msword, image/jpeg"
                     name="policy"
                     onChange={(e) =>
